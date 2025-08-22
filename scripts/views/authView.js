@@ -33,7 +33,7 @@ class AuthView {
     }
 
     clearForms() {
-        his.signupName.value = '';
+        this.signupName.value = '';
         this.signupEmail.value = '';
         this.signupPassword.value = '';
         this.logiEmail.value = '';
@@ -48,7 +48,12 @@ class AuthView {
 
     //show the signupform and hide loginform
     showLoginForm() {
-        this.showSignup.style.display = 'block';
+        this.loginForm.style.display = 'block';
+        this.signupForm.style.display = 'none';
+    }
+
+    showSignupForm() {
+        this.signupForm.style.display = 'block';
         this.loginForm.style.display = 'none';
     }
 
